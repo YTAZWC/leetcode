@@ -201,6 +201,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/T_LCR 146_ShunShiZhenDaYinJuZhenLcof.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/T_LCR 146_ShunShiZhenDaYinJuZhenLcof.md" />
+              <option name="frontendQuestionId" value="leetcode.cnLCR 146" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/T_LCR 146_ShunShiZhenDaYinJuZhenLcof.java" />
+              <option name="titleSlug" value="shun-shi-zhen-da-yin-ju-zhen-lcof" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/[1]两数之和.java">
           <value>
             <LeetcodeEditor>

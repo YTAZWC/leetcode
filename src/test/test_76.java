@@ -1,5 +1,6 @@
 package test;
 
+import java.util.Arrays;
 import java.util.HashMap;
 
 public class test_76 {
@@ -13,6 +14,11 @@ public class test_76 {
         b.put('a', 2121222);
 
         System.out.println(a.getOrDefault('a', 0) < b.get('a'));
+
+        int[][] array = new int[][]{};
+
+        System.out.println(Arrays.deepToString(array));
+        System.out.println(array.length);
 
     }
 
