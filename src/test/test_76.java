@@ -18,6 +18,9 @@ public class test_76 {
         System.out.println(Arrays.deepToString(array));
         System.out.println(array.length);
 
+        String[] strs = {""};
+        System.out.println(strs.length);
+
     }
 
 }
