@@ -21,6 +21,21 @@ public class test_76 {
         String[] strs = {""};
         System.out.println(strs.length);
 
+        System.out.println( 1 << 2 << 3);
+
+        System.out.println(getBinaryByString("bd"));
+        System.out.println(getBinaryByString("aacc"));
+
+    }
+
+    public static int getBinaryByString(String str) {
+        char[] charArray = str.toCharArray();
+        int binaryNumber = 0;
+        for (char ch: charArray) {
+            int index = ch - 'a';
+            binaryNumber += (1 << index);
+        }
+        return binaryNumber;
     }
 
 }
