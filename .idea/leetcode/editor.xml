@@ -36,6 +36,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/T_151_ReverseWordsInAString.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/T_151_ReverseWordsInAString.md" />
+              <option name="frontendQuestionId" value="leetcode.cn151" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/T_151_ReverseWordsInAString.java" />
+              <option name="titleSlug" value="reverse-words-in-a-string" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/T_15_ThreeSum.java">
           <value>
             <LeetcodeEditor>
@@ -176,6 +187,17 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/T_283_MoveZeroes.java" />
               <option name="titleSlug" value="move-zeroes" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/T_28_FindTheIndexOfTheFirstOccurrenceInAString.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/T_28_FindTheIndexOfTheFirstOccurrenceInAString.md" />
+              <option name="frontendQuestionId" value="leetcode.cn28" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/T_28_FindTheIndexOfTheFirstOccurrenceInAString.java" />
+              <option name="titleSlug" value="find-the-index-of-the-first-occurrence-in-a-string" />
             </LeetcodeEditor>
           </value>
         </entry>
