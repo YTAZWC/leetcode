@@ -21,7 +21,7 @@ public class T_20_ValidParentheses {
 class Solution {
     public boolean isValid(String s) {
 		int n = s.length();		// 字符串s的长度
-		if (n == 1) 	// 只有一个字符时
+		if (n % 2 != 0) 	// 只有一个字符时
 			return false;
 		Stack<Character> stack = new Stack<>();
 		for (int i = 0; i < n; ++i) {
