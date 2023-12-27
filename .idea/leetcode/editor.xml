@@ -47,6 +47,28 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/T_144_BinaryTreePreorderTraversal.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/T_144_BinaryTreePreorderTraversal.md" />
+              <option name="frontendQuestionId" value="leetcode.cn144" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/T_144_BinaryTreePreorderTraversal.java" />
+              <option name="titleSlug" value="binary-tree-preorder-traversal" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/T_145_BinaryTreePostorderTraversal.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/T_145_BinaryTreePostorderTraversal.md" />
+              <option name="frontendQuestionId" value="leetcode.cn145" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/T_145_BinaryTreePostorderTraversal.java" />
+              <option name="titleSlug" value="binary-tree-postorder-traversal" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/T_150_EvaluateReversePolishNotation.java">
           <value>
             <LeetcodeEditor>
@@ -278,6 +300,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/T_347_TopKFrequentElements.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/T_347_TopKFrequentElements.md" />
+              <option name="frontendQuestionId" value="leetcode.cn347" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/T_347_TopKFrequentElements.java" />
+              <option name="titleSlug" value="top-k-frequent-elements" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/T_349_IntersectionOfTwoArrays.java">
           <value>
             <LeetcodeEditor>
@@ -484,6 +517,17 @@
               <option name="host" value="leetcode.cn" />
               <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/T_904_FruitIntoBaskets.java" />
               <option name="titleSlug" value="fruit-into-baskets" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/T_94_BinaryTreeInorderTraversal.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/T_94_BinaryTreeInorderTraversal.md" />
+              <option name="frontendQuestionId" value="leetcode.cn94" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/T_94_BinaryTreeInorderTraversal.java" />
+              <option name="titleSlug" value="binary-tree-inorder-traversal" />
             </LeetcodeEditor>
           </value>
         </entry>
