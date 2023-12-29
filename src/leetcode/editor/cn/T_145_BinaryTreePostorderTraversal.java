@@ -3,8 +3,7 @@ package leetcode.editor.cn;
 
 import utils.TreeNode;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 /**
  * 145.二叉树的后序遍历
@@ -36,19 +35,36 @@ public class T_145_BinaryTreePostorderTraversal {
  * }
  */
 class Solution {
-    public List<Integer> postorderTraversal(TreeNode root) {
-		List<Integer> ans = new ArrayList<>();
-		postorder(root, ans);
-		return ans;
-    }
+//    public List<Integer> postorderTraversal(TreeNode root) {
+//		List<Integer> ans = new ArrayList<>();
+//		postorder(root, ans);
+//		return ans;
+//    }
+//
+//	private void postorder(TreeNode node, List<Integer> ans) {
+//		if (node == null)
+//			return;
+//		postorder(node.left, ans);
+//		postorder(node.right, ans);
+//		ans.add(node.val);
+//	}
 
-	private void postorder(TreeNode node, List<Integer> ans) {
-		if (node == null)
-			return;
-		postorder(node.left, ans);
-		postorder(node.right, ans);
-		ans.add(node.val);
+	public List<Integer> postorderTraversal(TreeNode root) {
+		List<Integer> ans = new ArrayList<>();
+		if (root == null)
+			return ans;
+		Deque<TreeNode> stack = new LinkedList<>();
+		stack.push(root);
+		while (!stack.isEmpty()) {
+			TreeNode node = stack.pop();
+			ans.add(node.val);
+			if (node.left != null) stack.push(node.left);
+			if (node.right != null) stack.push(node.right);
+		}
+		Collections.reverse(ans);
+		return ans;
 	}
+
 }
 //leetcode submit region end(Prohibit modification and deletion)
 
