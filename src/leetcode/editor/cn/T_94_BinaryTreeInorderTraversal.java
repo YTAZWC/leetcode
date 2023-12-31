@@ -70,25 +70,53 @@ class Solution {
 //		return ans;
 //	}
 	// 另一种迭代写法
+//	public List<Integer> inorderTraversal(TreeNode root) {
+//		List<Integer> ans = new ArrayList<>();
+//		if (root == null)	// 边界条件
+//			return ans;
+//		Deque<TreeNode> stack = new LinkedList<>();
+//		TreeNode cur = root;
+//		while (cur != null || !stack.isEmpty()) {
+//			if (cur != null) {	// 如果该节点不为空 则让其一直往左
+//				stack.push(cur);
+//				cur = cur.left;
+//			} else {
+//				cur = stack.pop();	// 此时处理栈弹出的元素
+//				ans.add(cur.val);
+//				cur = cur.right;
+//			}
+//		}
+//		return ans;
+//	}
+
+	// 统一前中后序遍历的迭代法 中序
 	public List<Integer> inorderTraversal(TreeNode root) {
 		List<Integer> ans = new ArrayList<>();
-		if (root == null)	// 边界条件
-			return ans;
+		if (root == null)
+			return ans;		// 处理边界条件
 		Deque<TreeNode> stack = new LinkedList<>();
-		TreeNode cur = root;
-		while (cur != null || !stack.isEmpty()) {
-			if (cur != null) {	// 如果该节点不为空 则让其一直往左
-				stack.push(cur);
-				cur = cur.left;
+		stack.push(root);	// 先保存根节点
+		while (!stack.isEmpty()) {
+			TreeNode node = stack.pop();
+			if (node != null) {
+				// node = stack.pop();	// 将节点移除 避免重复操作
+				// 先将右节点保存  因为右节点最后遍历
+				if (node.right != null)
+					stack.push(node.right);
+				// 再保存中节点
+				stack.push(node);
+				stack.push(null);	// 通过空值标记待处理节点
+				// 最后保存左节点
+				if (node.left != null)
+					stack.push(node.left);
 			} else {
-				cur = stack.pop();	// 此时处理栈弹出的元素
-				ans.add(cur.val);
-				cur = cur.right;
+				// stack.pop();	// 将空结点移除 下一个节点才是需要访问的节点
+				node = stack.pop();
+				ans.add(node.val);
 			}
 		}
 		return ans;
 	}
-
 }
 //leetcode submit region end(Prohibit modification and deletion)
 

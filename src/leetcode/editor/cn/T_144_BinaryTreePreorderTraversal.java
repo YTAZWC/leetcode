@@ -52,27 +52,55 @@ class Solution {
 //		preorderTraversal(node.right, ans);	// 最后遍历右子节点
 //	}
 
+//	public List<Integer> preorderTraversal(TreeNode root) {
+//		List<Integer> ans = new ArrayList<>();
+//
+//		if (root == null)	// 边界条件
+//			return ans;
+//
+//		Deque<TreeNode> stack = new LinkedList<>();	// 用于存储二叉树的节点
+//		stack.push(root);
+//		while (!stack.isEmpty()) {
+//			// 前序遍历先遍历 中
+//			TreeNode node = stack.pop();
+//			ans.add(node.val);
+//			// 根据栈后进先出 先保存右节点
+//			if (node.right != null)
+//				stack.push(node.right);
+//			// 再保存左节点
+//			if (node.left != null)
+//				stack.push(node.left);
+//		}
+//		return ans;
+//	}
+
+	// 统一迭代法 前序
 	public List<Integer> preorderTraversal(TreeNode root) {
 		List<Integer> ans = new ArrayList<>();
-
 		if (root == null)	// 边界条件
 			return ans;
-
 		Deque<TreeNode> stack = new LinkedList<>();	// 用于存储二叉树的节点
 		stack.push(root);
 		while (!stack.isEmpty()) {
-			// 前序遍历先遍历 中
 			TreeNode node = stack.pop();
-			ans.add(node.val);
-			// 根据栈后进先出 先保存右节点
-			if (node.right != null)
-				stack.push(node.right);
-			// 再保存左节点
-			if (node.left != null)
-				stack.push(node.left);
+			if (node != null) {
+				// 前序遍历 先保存右节点
+				if (node.right != null)
+					stack.push(node.right);
+				// 再保存左节点
+				if (node.left != null)
+					stack.push(node.left);
+				// 最后 中节点入栈
+				stack.push(node);
+				stack.push(null);	// 空指针进行标记
+			} else {
+				node = stack.pop();
+				ans.add(node.val);
+			}
 		}
 		return ans;
 	}
+
 }
 //leetcode submit region end(Prohibit modification and deletion)
 
