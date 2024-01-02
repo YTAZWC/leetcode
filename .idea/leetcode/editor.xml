@@ -58,6 +58,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/T_116_PopulatingNextRightPointersInEachNode.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/T_116_PopulatingNextRightPointersInEachNode.md" />
+              <option name="frontendQuestionId" value="leetcode.cn116" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/T_116_PopulatingNextRightPointersInEachNode.java" />
+              <option name="titleSlug" value="populating-next-right-pointers-in-each-node" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/T_142_LinkedListCycleIi.java">
           <value>
             <LeetcodeEditor>
