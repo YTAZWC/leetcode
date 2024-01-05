@@ -575,6 +575,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/T_572_SubtreeOfAnotherTree.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/T_572_SubtreeOfAnotherTree.md" />
+              <option name="frontendQuestionId" value="leetcode.cn572" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/T_572_SubtreeOfAnotherTree.java" />
+              <option name="titleSlug" value="subtree-of-another-tree" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/T_59_SpiralMatrixIi.java">
           <value>
             <LeetcodeEditor>
