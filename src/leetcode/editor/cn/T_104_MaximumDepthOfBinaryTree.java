@@ -54,18 +54,35 @@ class Solution {
 //		return ans;
 //    }
 
-	int ans = 0;
+//	int ans = 0;
+//	public int maxDepth(TreeNode root) {
+//		getMaxDepth(root, 1);
+//		return ans;
+//	}
+//	private void getMaxDepth(TreeNode node, int depth) {
+//		if (node == null)
+//			return ;
+//		ans = Math.max(ans, depth);
+//		getMaxDepth(node.left, depth+1);
+//		getMaxDepth(node.right, depth+1);
+//	}
+
 	public int maxDepth(TreeNode root) {
-		getMaxDepth(root, 1);
-		return ans;
+		return getHeight(root);
 	}
-	private void getMaxDepth(TreeNode node, int depth) {
+	// 后序遍历求二叉树某节点的高度
+	private int getHeight(TreeNode node) {
 		if (node == null)
-			return ;
-		ans = Math.max(ans, depth);
-		getMaxDepth(node.left, depth+1);
-		getMaxDepth(node.right, depth+1);
+			return 0;	// 为空时 节点高度为0
+		// 左
+		int leftHeight = getHeight(node.left);
+		// 右
+		int rightHeight = getHeight(node.right);
+		// 中
+		int height = Math.max(leftHeight, rightHeight) + 1;
+		return height;		// 返回该节点高度
 	}
+
 }
 //leetcode submit region end(Prohibit modification and deletion)
 
