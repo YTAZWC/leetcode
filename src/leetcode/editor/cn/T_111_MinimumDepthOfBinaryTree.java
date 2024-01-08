@@ -58,22 +58,44 @@ class Solution {
 //		return ans;
 //    }
 
-	int ans = Integer.MAX_VALUE;
+//	int ans = Integer.MAX_VALUE;
+//	public int minDepth(TreeNode root) {
+//		getMinDepth(root, 1);
+//		if (ans == Integer.MAX_VALUE) return 0;
+//		return ans;
+//	}
+//	private void getMinDepth(TreeNode node, int depth) {
+//		if (node == null)
+//			return ;	// 结束遍历
+//		if (node.left == null && node.right == null) {
+//			ans = Math.min(depth, ans);		// 记录最小深度
+//			return ;
+//		}
+//		getMinDepth(node.left, depth+1);
+//		getMinDepth(node.right, depth+1);
+//	}
+
 	public int minDepth(TreeNode root) {
-		getMinDepth(root, 1);
-		if (ans == Integer.MAX_VALUE) return 0;
-		return ans;
+		return getHeight(root);
 	}
-	private void getMinDepth(TreeNode node, int depth) {
+	// 后序遍历递归求二叉树节点高度
+	private int getHeight(TreeNode node) {
 		if (node == null)
-			return ;	// 结束遍历
-		if (node.left == null && node.right == null) {
-			ans = Math.min(depth, ans);		// 记录最小深度
-			return ;
-		}
-		getMinDepth(node.left, depth+1);
-		getMinDepth(node.right, depth+1);
+			return 0;	// 边界条件 空节点返回0
+		// 左
+		int leftHeight = getHeight(node.left);
+		// 右
+		int rightHeight = getHeight(node.right);
+		// 获取中 高度
+		int height;
+		if (node.left != null && node.right == null)
+			height = leftHeight+1;
+		else if (node.left == null && node.right != null)
+			height = rightHeight+1;
+		else height = Math.min(leftHeight, rightHeight)+1;
+		return height;
 	}
+
 }
 //leetcode submit region end(Prohibit modification and deletion)
 
