@@ -33,22 +33,31 @@ public class T_700_SearchInABinarySearchTree {
  * }
  */
 class Solution {
-	TreeNode ans;	// 保存搜索中 所找到的子树
-    public TreeNode searchBST(TreeNode root, int val) {
-		ans = null;	// 初始搜索结果为 null
-		dfs(root, val);
-		return ans;
-    }
-	private void dfs(TreeNode node, int val) {
-		if (node == null)
-			return ;
-		if (node.val == val) {
-			ans = node;
-			return ;	// 若找到子树 则终止搜索
-		}
-		dfs(node.left, val);	// 向左寻找
-		dfs(node.right, val);	// 向右寻找
+//	TreeNode ans;	// 保存搜索中 所找到的子树
+//    public TreeNode searchBST(TreeNode root, int val) {
+//		ans = null;	// 初始搜索结果为 null
+//		dfs(root, val);
+//		return ans;
+//    }
+//	private void dfs(TreeNode node, int val) {
+//		if (node == null)
+//			return ;
+//		if (node.val == val) {
+//			ans = node;
+//			return ;	// 若找到子树 则终止搜索
+//		}
+//		dfs(node.left, val);	// 向左寻找
+//		dfs(node.right, val);	// 向右寻找
+//	}
+
+	public TreeNode searchBST(TreeNode root, int val) {
+		if (root == null)
+			return null;	// 如果根节点为空 或者查询到不存在
+		if (root.val == val)
+			return root;
+		return searchBST(root.val < val? root.right : root.left, val);
 	}
+
 }
 //leetcode submit region end(Prohibit modification and deletion)
 
