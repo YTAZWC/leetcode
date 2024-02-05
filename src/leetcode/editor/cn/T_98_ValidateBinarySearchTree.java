@@ -33,15 +33,28 @@ public class T_98_ValidateBinarySearchTree {
  * }
  */
 class Solution {
-    public boolean isValidBST(TreeNode root) {
-		return isValidBST(root, Long.MIN_VALUE, Long.MAX_VALUE);
-    }
-	private boolean isValidBST(TreeNode node, long minVal, long maxVal) {
-		if (node == null)
+//    public boolean isValidBST(TreeNode root) {
+//		return isValidBST(root, Long.MIN_VALUE, Long.MAX_VALUE);
+//    }
+//	private boolean isValidBST(TreeNode node, long minVal, long maxVal) {
+//		if (node == null)
+//			return true;
+//		if (node.val <= minVal || node.val >= maxVal)
+//			return false;	// 该节点值 不满足二叉搜索树的范围 返回false
+//		return isValidBST(node.left, minVal, node.val) && isValidBST(node.right, node.val, maxVal);
+//	}
+
+	// 中序遍历
+	TreeNode pre = null;	// 标记中序遍历顺序当前节点的前一个节点
+	public boolean isValidBST(TreeNode root) {
+		if (root == null)
 			return true;
-		if (node.val <= minVal || node.val >= maxVal)
-			return false;	// 该节点值 不满足二叉搜索树的范围 返回false
-		return isValidBST(node.left, minVal, node.val) && isValidBST(node.right, node.val, maxVal);
+		boolean left = isValidBST(root.left);	// 中序遍历先 遍历判断左子树
+		if (pre != null && pre.val >= root.val)		// 再判断中
+			return false;	// 不符合条件
+		pre = root;	// 更新指针
+		boolean right = isValidBST(root.right);	// 中序遍历 遍历判断右子树
+		return left && right;
 	}
 }
 //leetcode submit region end(Prohibit modification and deletion)
