@@ -630,6 +630,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/T_501_FindModeInBinarySearchTree.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/T_501_FindModeInBinarySearchTree.md" />
+              <option name="frontendQuestionId" value="leetcode.cn501" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/T_501_FindModeInBinarySearchTree.java" />
+              <option name="titleSlug" value="find-mode-in-binary-search-tree" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/T_513_FindBottomLeftTreeValue.java">
           <value>
             <LeetcodeEditor>
