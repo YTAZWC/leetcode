@@ -33,16 +33,41 @@ public class T_701_InsertIntoABinarySearchTree {
  * }
  */
 class Solution {
-    public TreeNode insertIntoBST(TreeNode root, int val) {
+//    public TreeNode insertIntoBST(TreeNode root, int val) {
+//		if (root == null)
+//			return new TreeNode(val);
+//		if (val < root.val) {
+//			root.left = insertIntoBST(root.left, val);
+//		} else {
+//			root.right = insertIntoBST(root.right, val);
+//		}
+//		return root;
+//    }
+
+	public TreeNode insertIntoBST(TreeNode root, int val) {
 		if (root == null)
-			return new TreeNode(val);
-		if (val < root.val) {
-			root.left = insertIntoBST(root.left, val);
-		} else {
-			root.right = insertIntoBST(root.right, val);
+			return new TreeNode(val);	// 直接创建新的二叉搜索树
+		TreeNode node = root;	// 遍历二叉搜索树节点
+		while (node != null) {
+			if (val < node.val) {
+				if (node.left == null) {
+					node.left = new TreeNode(val);	// 找到插入位置并插入
+					break;
+				} else {
+					node = node.left;
+				}
+			} else {
+				if (node.right == null) {
+					node.right = new TreeNode(val);
+					break;
+				} else {
+					node = node.right;
+				}
+			}
 		}
 		return root;
-    }
+	}
+
 }
 //leetcode submit region end(Prohibit modification and deletion)
 
