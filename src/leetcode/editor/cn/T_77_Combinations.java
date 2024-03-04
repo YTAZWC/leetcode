@@ -36,7 +36,7 @@ class Solution {
 			ans.add(new ArrayList<>(arr));
 			return ;
 		}
-		for (int i = s; i <= num; ++ i) {
+		for (int i = s; i <= num-ret+arr.size()+1; ++ i) {
 			arr.add(i);
 			backtracking(i+1, arr);
 			arr.remove(arr.size()-1);
