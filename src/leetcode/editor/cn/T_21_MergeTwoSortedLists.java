@@ -29,7 +29,7 @@ public class T_21_MergeTwoSortedLists {
  */
 class Solution {
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
-
+		return null;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
