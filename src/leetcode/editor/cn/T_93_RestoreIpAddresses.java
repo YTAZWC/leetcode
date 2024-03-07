@@ -20,7 +20,7 @@ public class T_93_RestoreIpAddresses {
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
 	List<String> ans = new ArrayList<>();
-	StringBuffer path = new StringBuffer();
+	StringBuilder path = new StringBuilder();
 	int numberOfSeparations = 0;	// 确定得到的path中包含四个整数
 	int length;		// 记录字符串s长度
     public List<String> restoreIpAddresses(String s) {
