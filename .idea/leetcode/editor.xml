@@ -729,6 +729,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/T_491_NonDecreasingSubsequences.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/T_491_NonDecreasingSubsequences.md" />
+              <option name="frontendQuestionId" value="leetcode.cn491" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/T_491_NonDecreasingSubsequences.java" />
+              <option name="titleSlug" value="non-decreasing-subsequences" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/T_49_GroupAnagrams.java">
           <value>
             <LeetcodeEditor>
