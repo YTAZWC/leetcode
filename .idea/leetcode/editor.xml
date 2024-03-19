@@ -25,6 +25,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/T_1005_MaximizeSumOfArrayAfterKNegations.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/T_1005_MaximizeSumOfArrayAfterKNegations.md" />
+              <option name="frontendQuestionId" value="leetcode.cn1005" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/T_1005_MaximizeSumOfArrayAfterKNegations.java" />
+              <option name="titleSlug" value="maximize-sum-of-array-after-k-negations" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/T_100_SameTree.java">
           <value>
             <LeetcodeEditor>
