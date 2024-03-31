@@ -16,17 +16,31 @@ public class T_70_ClimbingStairs {
 // 力扣代码
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
-    public int climbStairs(int n) {
+//    public int climbStairs(int n) {
+//		if (n == 1)
+//			return n;
+//		int[] dp = new int[n+1];
+//		dp[0] = 1;
+//		dp[1] = 1;
+//		for (int i = 2; i <= n; ++ i) {
+//			dp[i] = dp[i-1] + dp[i-2];
+//		}
+//		return dp[n];
+//    }
+
+	public int climbStairs(int n) {
 		if (n == 1)
 			return n;
-		int[] dp = new int[n+1];
-		dp[0] = 1;
-		dp[1] = 1;
+		int ans = 0;
+		// 初始状态
+		int a = 1, b = 1;
 		for (int i = 2; i <= n; ++ i) {
-			dp[i] = dp[i-1] + dp[i-2];
+			ans = a + b;	// 状态转移
+			a = b;
+			b = ans;
 		}
-		return dp[n];
-    }
+		return ans;
+	}
 }
 //leetcode submit region end(Prohibit modification and deletion)
 
