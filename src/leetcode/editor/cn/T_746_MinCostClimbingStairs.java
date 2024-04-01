@@ -16,18 +16,32 @@ public class T_746_MinCostClimbingStairs {
 // 力扣代码
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
-    public int minCostClimbingStairs(int[] cost) {
+//    public int minCostClimbingStairs(int[] cost) {
+//		int n = cost.length;	// 获得楼顶
+//		int[] dp = new int[n+1];	// 记录在第i阶台阶向上爬时 需要花费的费用
+//		// 初始化dp
+//		dp[0] = cost[0];	// 从第0阶开始往上爬
+//		dp[1] = cost[1];	// 从第1阶台阶往上爬
+//		for (int i = 2; i < n; ++ i) {
+//			dp[i] = Math.min(dp[i-1], dp[i-2]) + cost[i];
+//		}
+//		dp[n] = Math.min(dp[n-1], dp[n-2]);	// 达到楼顶的最低花费
+//		return dp[n];
+//    }
+
+	public int minCostClimbingStairs(int[] cost) {
 		int n = cost.length;	// 获得楼顶
-		int[] dp = new int[n+1];	// 记录在第i阶台阶向上爬时 需要花费的费用
-		// 初始化dp
-		dp[0] = cost[0];	// 从第0阶开始往上爬
-		dp[1] = cost[1];	// 从第1阶台阶往上爬
+		int ans = 0;	// 表示由状态转移方程 计算得到的结果
+		int a = cost[0], b = cost[1];	// 表示状态转移方程的参数
 		for (int i = 2; i < n; ++ i) {
-			dp[i] = Math.min(dp[i-1], dp[i-2]) + cost[i];
+			ans = Math.min(a, b) + cost[i];
+			a = b;
+			b = ans;
 		}
-		dp[n] = Math.min(dp[n-1], dp[n-2]);	// 达到楼顶的最低花费
-		return dp[n];
-    }
+		ans = Math.min(a, b);
+		return ans;
+	}
+
 }
 //leetcode submit region end(Prohibit modification and deletion)
 
