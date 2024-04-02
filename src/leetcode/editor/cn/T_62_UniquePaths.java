@@ -37,18 +37,25 @@ class Solution {
 //    }
 
 	// 压缩状态 —— 滚动数组
-	public int uniquePaths(int m, int n) {
-		int[] dp = new int[n];
-		// 初始化dp
-        Arrays.fill(dp, 1);
-		for (int i = 1; i < m; ++ i) {
-			for (int j = 1; j < n; ++ j) {
-				dp[j] += dp[j-1];
-			}
-		}
-		return dp[n-1];
-	}
+//	public int uniquePaths(int m, int n) {
+//		int[] dp = new int[n];
+//		// 初始化dp
+//        Arrays.fill(dp, 1);
+//		for (int i = 1; i < m; ++ i) {
+//			for (int j = 1; j < n; ++ j) {
+//				dp[j] += dp[j-1];
+//			}
+//		}
+//		return dp[n-1];
+//	}
 
+	public int uniquePaths(int m, int n) {
+		long ans = 1;
+		for (int i = n, j = 1; j < m; ++ i, ++ j) {
+			ans = ans * i / j;
+		}
+		return (int) ans;
+	}
 }
 //leetcode submit region end(Prohibit modification and deletion)
 
