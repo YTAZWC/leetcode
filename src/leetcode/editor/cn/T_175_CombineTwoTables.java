@@ -9,7 +9,7 @@ package leetcode.editor.cn;
 public class T_175_CombineTwoTables {
 	 public static void main(String[] args) {
 	     //测试代码
-	     Solution solution = new T_175_CombineTwoTables().new Solution();
+//	     Solution solution = new T_175_CombineTwoTables().new Solution();
 	 
 	 }
 	 
