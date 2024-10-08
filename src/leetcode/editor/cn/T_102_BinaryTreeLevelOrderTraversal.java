@@ -62,10 +62,10 @@ class Solution {
 	// 递归
 	public List<List<Integer>> levelOrder(TreeNode root) {
 		List<List<Integer>> ans = new ArrayList<>();
-		BFS(root, 0, ans);
+		bfs(root, 0, ans);
 		return ans;
 	}
-	private void BFS(TreeNode node, int deeply, List<List<Integer>> ans) {
+	private void bfs(TreeNode node, int deeply, List<List<Integer>> ans) {
 		if (node == null)	// 已经遍历到最后一层结束
 			return ;
 		if (deeply >= ans.size()) {	// 出现新层
@@ -75,8 +75,8 @@ class Solution {
 		} else {	// 该结点在已经建立的层中
 			ans.get(deeply).add(node.val);
 		}
-		BFS(node.left, deeply+1, ans);	// 继续向左遍历
-		BFS(node.right, deeply+1, ans);	// 继续向右遍历
+		bfs(node.left, deeply+1, ans);	// 继续向左遍历
+		bfs(node.right, deeply+1, ans);	// 继续向右遍历
 	}
 }
 //leetcode submit region end(Prohibit modification and deletion)
